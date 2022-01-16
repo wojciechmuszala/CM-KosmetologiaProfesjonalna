@@ -45,6 +45,12 @@ nav {
 .logo a {
     text-decoration: none;
     color: black;
+    transition: 0.5s;
+}
+
+.logo a:hover{
+letter-spacing: 5px;
+font-size: 30px;
 }
 
 nav ul,
@@ -74,12 +80,25 @@ nav li a {
     margin: 0 20px;
     color: black;
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: 0.5s;
     border: 1px solid transparent;
 }
 
+nav li a.unavaible{
+    text-decoration: line-through;
+    color: #555;
+    transition: none;
+
+}
+
+nav li a.unavaible:hover {
+    text-decoration: line-through;
+    color: #555;
+    border-bottom: none;
+}
+
+
 nav li a:hover {
-    color: #333;
     border-bottom: 1px solid black;
 }
 
@@ -91,10 +110,11 @@ nav li a:hover {
     font-size: 25px;
 }
 
-@media screen and (max-width: 900px) {
-    body{
-        display: none;
-    }
+@media screen and (max-width: 1024px) {
+nav li a {
+    margin: 0 5px;
+    padding: 2px 5px;
+}
     
 }
 
@@ -149,11 +169,8 @@ div.p3 {
 
 /* SECTION OFFER */
 section.offers {
-    /* height: 90vh; */
     font-size: 0px;
     text-align: center;
-
-
 }
 
 section.offers h1 {
@@ -180,31 +197,44 @@ div.offer h2 {
     line-height: 50px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    transition: 0.5s;
 }
+
+
 
 div.offer div {
     height: 300px;
     margin: 5px 10px;
     overflow: hidden;
-
+    background-size: cover;
 }
+
+div.offer a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+div.offer a:hover h2 {
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
 
 div.offer div:hover {
     cursor: pointer;
-    opacity: 0.7;
-
 }
 
 div.first {
-    background-color: white;
+    background-image: url(../img/nails2.jpeg);
 }
 
 div.second {
-    background-color: white;
+    background-image: url(../img/young.jpeg);
 }
 
 div.third {
-    background-color: white;
+    background-image: url(../img/skin.jpeg);
 }
 
 /* ASIDE SEPARATION */
@@ -221,11 +251,11 @@ aside.separation div {
 }
 
 div.image1 {
-    background-image: url(img/photo1.jpg);
+    background-image: url(../img/photo2.jpg);
 }
 
 div.image2 {
-    background-image: url(img/photo3.jpeg)
+    background-image: url(../img/photo1.jpg)
 }
 
 /* SECTION ABOUT */
@@ -241,16 +271,16 @@ section.about .martyna {
     float: left;
     width: 30%;
     min-height: 90vh;
-    background-color: white;
+    background-image: url(../img/me.jpeg);
 
 }
 
 section.about article {
+    position: relative;
     float: left;
     width: 70%;
     min-height: 90vh;
     padding: 50px;
-    /* background-color: red; */
 }
 
 section.about article h1 {
@@ -263,6 +293,27 @@ section.about article p {
     text-align: justify;
 }
 
+button {
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 25px;
+    transition: 0.3s;
+    font-family:'Roboto';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: black;
+    color: rgb(228, 211, 211);
+
+
+}
+
+/* SECTION CONTACT */
 section.contact {
     height: 50vh;
     text-align: center;
@@ -271,12 +322,10 @@ section.contact {
 
 section.contact p.title {
     margin-top: 50px;
-    /* font-family: 'Roboto'; */
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 40px;
     margin-bottom: 10px;
-    /* font-weight: bold; */
 }
 
 section.contact ul {
