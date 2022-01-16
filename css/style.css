@@ -16,6 +16,7 @@ html {
     font-family: 'Averia Serif Libre', cursive;
 }
 
+/* NAVIGATION BAR */
 nav {
     position: fixed;
     width: 100%;
@@ -46,18 +47,9 @@ nav {
     color: black;
 }
 
-
-.mobile_nav {
-    display: none;
-    float: left;
-    top: 30%;
-    right: 5%;
-    font-size: 25px;
-
-}
-
 nav ul,
-.logo {
+.logo,
+.mobile-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -89,6 +81,21 @@ nav li a {
 nav li a:hover {
     color: #333;
     border-bottom: 1px solid black;
+}
+
+.mobile-nav {
+    display: none;
+    float: left;
+    top: 30%;
+    right: 5%;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        display: none;
+    }
+    
 }
 
 /* HEADER */
@@ -264,14 +271,18 @@ section.contact {
 
 section.contact p.title {
     margin-top: 50px;
-    font-size: 30px;
+    /* font-family: 'Roboto'; */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
     margin-bottom: 10px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 section.contact ul {
     list-style: none;
     padding: 30px;
+    padding-top: 15px
 }
 
 section.contact li {
@@ -288,6 +299,7 @@ section.contact a {
     color: black;
 }
 
+/* FOOTER */
 footer div {
     width: 100%;
     height: 72.15px;
