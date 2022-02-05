@@ -1,5 +1,3 @@
-/* przerobić line-heigh na wartosci bez jednostek */
-
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +13,7 @@
 html {
     background-color: rgb(228, 211, 211);
     scroll-behavior: smooth;
-    font-family: 'Montserrat',
-    sans-serif;
+    font-family: 'Averia Serif Libre', cursive;
 }
 
 /* NAVIGATION BAR */
@@ -25,8 +22,8 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1;
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto',
+        sans-serif;
     letter-spacing: 3px;
 }
 
@@ -43,11 +40,6 @@ nav {
 .logo {
     float: left;
     left: 30px;
-}
-
-nav.logo img {
-    max-width: 20%%;
-    width: auto;
 }
 
 .logo a {
@@ -141,16 +133,6 @@ header {
     font-size: 100px;
 }
 
-header img {
-      width: 400px;
-      height: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      
-}
-
 /* ASIDE PHOTOS */
 aside.photos {
     font-size: 0;
@@ -186,7 +168,6 @@ div.p3 {
 }
 
 /* SECTION OFFER */
-/* dodać diva w każdym zdjęciu oferty, dać mu pos: absoulte i relative na rodzica, dać taki sam rozmiar i kolor rgba 0,0,0,0.5, na :hover dać kolor transparent */
 section.offers {
     font-size: 0px;
     text-align: center;
@@ -200,7 +181,6 @@ section.offers h1 {
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
-    letter-spacing: 3px;
     color: white;
     margin-bottom: 5vh;
 }
@@ -213,9 +193,7 @@ div.offer {
 
 div.offer h2 {
     font-size: 13px;
-    /* font-family: 'Roboto'; */
-    font-family: 'Montserrat',
-    sans-serif;
+    font-family: 'Roboto';
     line-height: 50px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -285,8 +263,6 @@ div.image2 {
 section.about {
     min-height: 90vh;
     margin-bottom: 25px;
-    font-family: 'Montserrat',
-    sans-serif;
 
 
 }
@@ -295,9 +271,7 @@ section.about .martyna {
     float: left;
     width: 30%;
     min-height: 90vh;
-    background-image: url(../img/me2.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(../img/me.jpeg);
 
 }
 
@@ -328,8 +302,7 @@ button {
     padding: 10px 20px;
     font-size: 25px;
     transition: 0.3s;
-    /* font-family:'Roboto'; */
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Roboto';
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -344,8 +317,6 @@ button:hover {
 section.contact {
     height: 50vh;
     text-align: center;
-    font-family: 'Montserrat',
-    sans-serif;
 
 }
 
