@@ -43,6 +43,38 @@ nav.mobile {
     box-shadow: 0px 1px 2px black;
 }
 
+.side-menu div {
+    position: fixed;
+    top: 50px;
+    right: -65%;
+    width: 60%;
+    height: calc(100% - 50px);
+    background-color: black;
+    border-left: 1px solid black;
+    box-shadow: -5px 0px 2px black;
+    transition: 0.7s;
+
+}
+
+.side-menu div.show {
+    right: 0px
+}
+
+.side-menu ul {
+    list-style: none;
+    line-height: 100px;
+    margin-left: 20px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
 a.burger {
     position: absolute;
     top: 0;
@@ -124,11 +156,17 @@ header.logo {
 
 }
 
+.button {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
 .about button {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 0;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translateX(-50%);
     padding: 10px 20px;
     border: 1px solid;
     background-color: black;
@@ -136,10 +174,38 @@ header.logo {
     text-transform: uppercase;
     color: white;
     letter-spacing: 5px;
-    margin: 20px 0;
+    margin-bottom: 20px;
 
 }
 
 /* Contact */
 
-.contact
+.contact {
+    height: 30vh;
+}
+
+.contact h1 {}
+
+.contact ul {
+    list-style: none;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.contact a {
+    line-height: 30px;
+    text-decoration: none;
+    color: black
+}
+
+.contact i {
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    border-top: 1px solid black;
+}
