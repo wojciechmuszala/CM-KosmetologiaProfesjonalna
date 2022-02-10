@@ -16,19 +16,40 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #FFF7EF;
+    /* background-color: #FFF7EF; */
+    background-color: #fcf0e3;
     color: #613228;
 }
 
+div.title-wrapper {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.title-wrapper span {
+    flex-basis: 40%;
+    height: 0.01px;
+    transform: translateY(-50%);
+    border-top: 1px solid black;
+}
+
+
 h1 {
+    display: inline-block;
+    padding: 0 5px;
     text-align: center;
-    font-size: 20px;
-    line-height: 50px;
-    width: 100%;
+    font-size: 30px;
+    line-height: 70px;
+    width: auto;
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
     text-transform: uppercase;
     letter-spacing: 5px;
-    background-color: #00000F;
-    color: #FFF7EF;
+    color: #613228;
     font-weight: 400;
 
 }
@@ -167,14 +188,6 @@ header.logo {
 
 /* Offer --------------------------------------------- */
 
-section.offer h1 {
-    text-align: center;
-    font-size: 20px;
-    line-height: 50px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
 section.offer div.offer-photo {
     position: relative;
     width: 100%;
@@ -182,7 +195,6 @@ section.offer div.offer-photo {
     display: block;
     background-image: url(../img/nails.png);
     background-size: cover;
-    z-index: -1;
 }
 
 section.offer div.offer-photo h2 {
@@ -197,44 +209,97 @@ section.offer div.offer-photo h2 {
     color: white;
     letter-spacing: 3px;
     text-transform: uppercase;
-    z-index: 2;
 }
 
-section.offer div.offer-wrapper {
+section.offer div.offer-photo div.opacity {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 0;
+    width: 100%;
+    background-color: white;
+    opacity: 0.2;
+    z-index: 1;
+    transition: 0.4s linear;
+}
+
+section.offer div.offer-photo:hover div.opacity {
+    height: 100%;
+}
+
+.offer div.price-list {
+    padding: 8px;
+    min-width: 300px;
+    background-color: #B28866;
+    color: #FFF7EF;
+}
+
+.offer table {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.offer table tr {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-section.offer ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 20px;
-}
-
-section.offer ul.service {
-    flex-basis: 75%;
-}
-
-section.offer ul.price {
-    align-items: flex-end;
-    border-left: 1px solid #B28866;
-    flex-basis: 25%;
-
-}
-
-section.offer li {
-    list-style: none;
+.offer table td {
     padding: 10px 0;
-    font-size: 12px;
-    cursor: help;
-}
-
-li.few {
-    margin-left: 30px;
-    margin-top: -15px;
+    height: 100%;
 
 }
 
+.offer table td.service {
+    flex-basis: 70%;
+    padding-right: 10px;
+    border-right: 1px solid #FFF7EF;
+}
+
+.offer table td.service.special {
+    padding-left: 20px;
+}
+
+@media (min-width: 1024px) {
+    section.offer div.wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    section.offer div.offer-wrapper {
+        flex-basis: 25%;
+        display: flex;
+        flex-direction: column;
+        max-width: 285px;
+        margin: 0 5px;
+
+    }
+
+    section.offer div.offer-photo {
+        /* flex-basis: 25%; */
+    }
+
+    section.offer div.offer-photo h2 {
+        font-size: 12px;
+    }
+
+    .offer table {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .offer div.price-list {
+        min-width: auto;
+    }
+
+
+}
 
 /* Informations --------------------------------------------- */
 
@@ -266,27 +331,6 @@ section.info {
 
 }
 
-/* .button {
-    width: 100%;
-    position: relative;
-    height: 100%;
-}
-
-.about button {
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    border: 1px solid;
-    background-color: black;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
-} */
-
 @media (min-width: 1024px) {
     .about article {
         display: flex;
@@ -308,31 +352,31 @@ section.info {
     }
 }
 
-    /* Contact */
+/* Contact */
 
-    .contact {
-        height: 100%;
-    }
+.contact {
+    height: 100%;
+}
 
-    .contact ul {
-        list-style: none;
-        margin: 20px 0;
-        text-align: center;
-    }
+.contact ul {
+    list-style: none;
+    margin: 20px 0;
+    text-align: center;
+}
 
-    .contact a {
-        line-height: 30px;
-        text-decoration: none;
-        color: black;
-    }
+.contact a {
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+}
 
-    .contact i {
-        margin-right: 10px;
-    }
+.contact i {
+    margin-right: 10px;
+}
 
-    footer {
-        text-align: center;
-        font-size: 12px;
-        padding: 10px 0;
-        border-top: 1px solid black;
-    }
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    border-top: 1px solid black;
+}
