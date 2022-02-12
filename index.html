@@ -19,10 +19,10 @@
         <aside class="side-menu">
             <div>
                 <ul>
-                    <li><a href="">Oferta</a></li>
-                    <li><a href="">O mnie</a></li>
-                    <li><a href="">Informacje</a></li>
-                    <li><a href="">Kontakt</a></li>
+                    <li><a href="#offer">Oferta</a></li>
+                    <li><a href="#info">Informacje</a></li>
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
         </aside>
@@ -31,23 +31,24 @@
     <nav class="desktop">
         <span><img src="" alt=""></span>
         <ul>
-            <li><a href="">Oferta</a></li>
-            <li><a href="">O mnie</a></li>
-            <li><a href="">Informacje</a></li>
-
-            <li><a href="">Kontakt</a></li>
+            <li><a href="#offer">Oferta</a></li>
+            <li><a href="#info">Informacje</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
     <header class="logo">
         <img src="img/logoMCK-black.png" alt="">
     </header>
     <main>
-        <section class="offer">
+        <section id="offer" class="offer">
             <div class="title-wrapper">
                 <span></span>
                 <h1>Oferta</h1>
                 <span></span>
             </div>
+            <p class="about">Informacje dotyczące każdej usługi, dostępne są w salonie, oraz poprzez kontakt e-mailowy
+                lub telefoniczny.</p>
             <div class="wrapper">
                 <div class="offer-wrapper">
                     <div class="offer-photo">
@@ -64,6 +65,7 @@
                                 <tr>
                                     <td class="service special">przedłużenie żelowe mini/maxi</td>
                                     <td class="price">110/120 zł</td>
+
                                 </tr>
                                 <tr>
                                     <td class="service special">żel na naturalną płytkę</td>
@@ -230,11 +232,11 @@
                                     <td class="price">35 zł</td>
                                 </tr>
                                 <tr>
-                                    <td class="service special">Henna i regulacja brwi</td>
+                                    <td class="service">Henna i regulacja brwi</td>
                                     <td class="price">35 zł</td>
                                 </tr>
                                 <tr>
-                                    <td class="service special">Regulacja brwi</td>
+                                    <td class="service">Regulacja brwi</td>
                                     <td class="price">20 zł</td>
                                 </tr>
                                 <tr>
@@ -247,46 +249,78 @@
                 </div>
             </div>
         </section>
-        <section class="info">
+        <section id="info" class="info">
             <div class="title-wrapper">
                 <span></span>
-            <h1>Informacje</h1>
-            <span></span>
+                <h1>Informacje</h1>
+                <span></span>
+            </div>
+            <div class="hours">
+                <table>
+                    <caption>Godziny otwarcia</caption>
+                    <tbody>
+                        <tr>
+                            <td>Poniedziałek</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Wtorek</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Środa</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Czwartek</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Piątek</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sobota</td>
+                            <td>nieczynne</td>
+                        </tr>
+                        <tr>
+                            <td>Niedziela</td>
+                            <td>nieczynne</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="title-wrapper">
                 <span></span>
                 <h1>O mnie</h1>
                 <span></span>
-                </div>
+            </div>
             <article>
                 <div class="photo">
                     <img src="img/photome.jpg" alt="">
                 </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum dolor, ipsam blanditiis
-                        error eius, temporibus, repellendus quisquam laudantium obcaecati odio atque est? Quaerat
-                        corrupti
-                        eius quas in ullam dolore harum autem ab sequi, molestiae magni, molestias tenetur perferendis.
-                        Odit
-                        eaque, inventore asperiores, quis eos corrupti quibusdam repellendus vitae sint modi facilis
-                        possimus culpa voluptatem? Nemo labore omnis aliquam. Accusantium, maiores velit sequi inventore
-                        obcaecati sapiente voluptatibus est beatae molestias laudantium cupiditate doloremque,
-                        exercitationem qui! Veniam złaceat maiores velit. Nostrum praesentium corrupti recusandae. Nobis
-                        reprehenderit recusandae, tempore, voluptate dolor expedita cupiditate nihil porro accusamus
-                        commodi
-                        cumque molestiae laudantium, ullam iste!</p>
-                    <!-- <button class="more">Więcej</button> -->
-                </div>
+                <p>Dzień dobry, nazywam się Martyna Cieślicka. Jestem dyplomowanym kosmetologiem pasjonującym się
+                    terapiami
+                    anti-aging.
+                    <br><br>
+                    Gabinet powstał, aby kompleksowo i profesjonalnie zadbać o klientów, a każda z usług dobierana
+                    jest indywidualnie do potrzeb skóry pacjenta.
+                    <br><br>
+                    Gabinet kosmetologiczny cechuje profesjonalne i kompleksowe podejście do klienta, a każda z
+                    usług jest indywidualnie dobierana w zależności od oczekiwań.
+                    Pragnę, aby każdy po opuszczeniu mojego gabinetu poczuł się wyjątkowo. . .
+                </p>
+                <!-- <button class="more">Więcej</button> -->
             </article>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="title-wrapper">
                 <span></span>
                 <h1>Kontakt</h1>
                 <span></span>
-                </div>
+            </div>
             <ul>
                 <li><i class="fas fa-map-marked"></i><a href="https://goo.gl/maps/jALXLQ3qEZK1nS1y9">Strzelce
                         Opolskie, ul. Uliczna 13</a></li>
