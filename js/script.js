@@ -1,5 +1,5 @@
 const burger = document.querySelector('.burger');
-const sideMenu = document.querySelector('.side-menu div');
+const sideMenu = document.querySelector('.side-menu ul');
 const menuItem = document.querySelectorAll('.side-menu a')
 const offerItem = document.querySelectorAll('.offer div.offer-photo')
 const priceList = document.querySelector('.offer div.price-list')
